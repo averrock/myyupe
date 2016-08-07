@@ -96,7 +96,7 @@ class BackendController extends yupe\components\controllers\BackController
         $parser->parse($pathToImportXmlFile); // полный путь до файла import.xml*/
         //var_dump($data->categories);
         foreach ($data['categores'i] as $key => $value) {
-            
+            echo "string";
          var_dump($value);
         }
         $this->render('index', Yii::app()->moduleManager->getModules(false, false));
