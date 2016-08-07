@@ -95,9 +95,9 @@ class BackendController extends yupe\components\controllers\BackController
         }); // добавление функции обработки события CategoryEvent
         $parser->parse($pathToImportXmlFile); // полный путь до файла import.xml*/
         //var_dump($data->categories);
-        foreach ($data['categories'] as $key => $value) {
+        foreach ($data['categores'i] as $key => $value) {
             
-            //var_dump($value);
+         var_dump($value);
         }
         $this->render('index', Yii::app()->moduleManager->getModules(false, false));
     }
